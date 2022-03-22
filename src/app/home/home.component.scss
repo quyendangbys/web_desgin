@@ -28,6 +28,10 @@
     background-color: #428d57;
     height: 100px;
     width: 100%;
+    padding: 0 100px;
+    .img-logo {
+        color: white;
+    } 
 }
 
 .logo {
@@ -41,3 +45,4 @@
     from {left: -200px;}
     to {left: 0px;}
 }
+
