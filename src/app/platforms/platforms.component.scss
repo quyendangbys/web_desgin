@@ -25,10 +25,19 @@
     height: 100%;
     background-color: #006dff;
     transition: width 2s;
-    animation: growingWidth 5s 3;
+    animation: growingWidth 2s 3;
+    animation-iteration-count: infinite;
 }
 
 @keyframes growingWidth {
     from {width: 0%}
     to {width: 100%}
 }
+
+
+
+
+
+  
+  
+  
