@@ -29,3 +29,15 @@
     height: 100px;
     width: 100%;
 }
+
+.logo {
+    position: relative;
+    animation: leftToRight 1.5s 1;
+    animation-direction: normal;
+    opacity: 1;
+}
+  
+@keyframes leftToRight {
+    from {left: -200px;}
+    to {left: 0px;}
+}
