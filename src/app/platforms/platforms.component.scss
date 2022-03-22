@@ -1,0 +1,13 @@
+.logo {
+position: relative;
+animation: leftToRight 1s 2;
+animation-direction: alternate;
+}
+  
+@keyframes leftToRight {
+0%   { left: 0px; top: 0px;}
+100%  {left: 200px; top: 0px;}
+// 50%  {left: 200px; top: 200px;}
+// 75%  {left: 0px; top: 200px;}
+// 100% {left: 0px; top: 0px;}
+}
