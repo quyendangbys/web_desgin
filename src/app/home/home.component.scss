@@ -11,7 +11,7 @@
     background-position: center;
     width: 100%;
     height: 600px;
-    .body-title {
+    .body-bg_title {
         font-size: 35px;
         font-weight: 600;
         font-family: sans-serif;
@@ -23,6 +23,48 @@
         height: 42px;
         font-size: 14px;
     }
+}
+.body-book {
+  // background-image: url("/assets/images/forest.jpg");
+  // // color: white;
+  // // background-size: auto 100%;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  background-color: #303541;
+  width: 100%;
+  height: 1000px;
+  padding: 0 200px;
+//   position: relative;
+    .col {
+        padding-right: 176px;
+        margin-top: 150px;
+    }
+    .body-book_title {
+            color: #e5a511;
+            font-size: 35px;
+            font-weight: 600;
+            font-family: sans-serif;
+        }
+    .body-book_sub-title {
+        color: white;
+    }
+}
+
+.body-card {
+    background-color: white;
+    border-radius: 15px;
+    width: 80%;
+    height: 400px;
+    position: absolute;
+    top: 1500px;
+    left: 192px;
+    box-shadow: 0px 0px 9px 0px #0000002e;
+    padding: 50px;
+}
+
+.footer {
+    margin-top: 500px;
 }
 
 .logo {
