@@ -35,21 +35,26 @@
 // }
 
 .offering {
+    background-color: #e3e9e4;
     .offering-item {
         width: 50%;
+        background-color: #f6f6f6;
     }
     .offering-title {
         font-weight: bold;
         font-size: 1.6rem;
+        color: #428d57;
+        display: flex;
+        justify-content: center;
     }
     .offering--sub-title {
-        color: #e5a511;
+        color: #428d57;
         font-size: 1.4rem;
     }
     .offering-box {
         margin-bottom: 15px;
         .box-icon {
-            color: #e5a511;
+            color: #428d57;
             margin-right: 15px;
         }
         .box-title {
@@ -69,13 +74,17 @@
 }
 
 .corporate {
+    background-color: #428d57;
+    color: white;
     .corporate-title {
 
     }
     .corporate-content {
+        display: flex;
+        justify-content: center;
         .corporate-box {
             .box-icon {
-
+                height: 96px;
             }
             .box-desc {
                 
