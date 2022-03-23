@@ -1,39 +1,88 @@
-.logo {
-    position: relative;
-    animation: leftToRight 1.5s 1;
-    animation-direction: normal;
-    margin-left: 200px;
-    opacity: 1;
-}
+// .logo {
+//     position: relative;
+//     animation: leftToRight 1.5s 1;
+//     animation-direction: normal;
+//     margin-left: 200px;
+//     opacity: 1;
+// }
   
-@keyframes leftToRight {
-    from {left: -200px;}
-    to {left: 0px;}
+// @keyframes leftToRight {
+//     from {left: -200px;}
+//     to {left: 0px;}
+// }
+
+// .progress {
+//     width: 400px;
+//     height: 2px;
+//     background-color: #cce2ff;
+//     // border-radius: 5px;
+//     overflow: hidden;
+//     // transition: all 0.2s;
+//     margin-bottom: 5px;
+// }
+// .progress__fill {
+//     width: 0%;
+//     height: 100%;
+//     background-color: #006dff;
+//     transition: width 2s;
+//     animation: growingWidth 2s 3;
+//     animation-iteration-count: infinite;
+// }
+
+// @keyframes growingWidth {
+//     from {width: 0%}
+//     to {width: 100%}
+// }
+
+.offering {
+    .offering-item {
+        width: 50%;
+    }
+    .offering-title {
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+    .offering--sub-title {
+        color: #e5a511;
+        font-size: 1.4rem;
+    }
+    .offering-box {
+        margin-bottom: 15px;
+        .box-icon {
+            color: #e5a511;
+            margin-right: 15px;
+        }
+        .box-title {
+            font-weight: bold;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+    }
 }
 
-.progress {
-    width: 400px;
-    height: 2px;
-    background-color: #cce2ff;
-    // border-radius: 5px;
-    overflow: hidden;
-    // transition: all 0.2s;
-    margin-bottom: 5px;
-}
-.progress__fill {
-    width: 0%;
-    height: 100%;
-    background-color: #006dff;
-    transition: width 2s;
-    animation: growingWidth 2s 3;
-    animation-iteration-count: infinite;
+@media (max-width: 1024px) {
+    .offering {
+        .offering-item {
+            width: 100%;
+        }
+    }
 }
 
-@keyframes growingWidth {
-    from {width: 0%}
-    to {width: 100%}
-}
+.corporate {
+    .corporate-title {
 
+    }
+    .corporate-content {
+        .corporate-box {
+            .box-icon {
+
+            }
+            .box-desc {
+                
+            }
+        }
+    }
+}
 
 
 
