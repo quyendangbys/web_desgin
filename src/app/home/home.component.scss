@@ -25,42 +25,35 @@
     }
 }
 .body-book {
-  // background-image: url("/assets/images/forest.jpg");
-  // // color: white;
-  // // background-size: auto 100%;
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-position: center;
-  background-color: #303541;
-  width: 100%;
-  height: 1100px;
-  padding: 0 200px;
-//   position: relative;
-    .col {
-        padding-right: 176px;
-        margin-top: 150px;
-    }
-    .body-book_title {
-            color: #e5a511;
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 1000px;
+    padding: 0 235px;
+    .row {
+        padding-top: 100px;
+        padding-bottom: 80px;
+        .col {
+            padding-right: 176px;
+            margin-top: 150px;
+        }
+        .body-book_title {
+            color: #428d57;
             font-size: 35px;
             font-weight: 600;
             font-family: sans-serif;
         }
-    .body-book_sub-title {
-        color: white;
+        .body-book_sub-title {
+            color: black;
+        }
     }
 }
 
 .body-card {
     background-color: white;
-    border-radius: 15px;
-    width: 80%;
+    width: 100%;
     height: 500px;
-    position: absolute;
-    top: 1530px;
-    left: 192px;
     box-shadow: 0px 0px 9px 0px #0000002e;
-    padding: 50px 60px;
+    padding: 50px 0px;
     .carousel-caption {
          color: black;
     }
@@ -115,30 +108,76 @@
 }
 
 .carousel-indicators li {
-    background-color: #373c42;
-    width: 24px;
-    height: 3.7px;
-    margin-right: 8px;
-    margin-left: 8px;
+    background-color: #a9bac7;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0 12px;
     opacity: unset;
 }
 
 .carousel-indicators {
     .active {
-        background-color: #e5a511;
+        background-color: #428d57;
+        width: 22px;
+        height: 8px;
+        margin-right: 15px;
+        margin-left: 15px;
+        opacity: unset;
+        border-radius: 0;
+        position: relative;
+    }
+    .active::before {
+        content: "";
+        width: 10px;
+        height: 8px;
+        border-radius: 50%;
+        position: absolute;
+        left: -5px;
+        background-color: #428d57;
+    }
+    .active::after {
+        content: "";
+        width: 10px;
+        height: 8px;
+        border-radius: 50%;
+        position: absolute;
+        right: -5px;
+        background-color: #428d57;
     }
 }
+
 .carousel-caption {
     position: unset;
-    text-align: left;
+    padding: 0 384px;
     .carousel-caption_title {
-        color: #e5a511;
+        color: #428d57;
         font-size: 23px;
+        font-weight: bold;
+    }
+    .carousel-caption_sub-title {
+        font-weight: bold;
     }
     .carousel-caption_link {
-        color: #e5a511;
+        color: #428d57;
     }
 }
+.carousel-control-prev {
+    width: 7%;
+    .fal {
+        color: #374659;
+        font-size: 40px;
+    }
+}
+.carousel-control-next {
+    width: 7%;
+    .fal {
+        color: #374659;
+        font-size: 40px;
+    }
+}
+
+
 
 .footer {
     margin-top: 500px;
