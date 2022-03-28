@@ -88,18 +88,20 @@
 .corporate {
     background-color: #428d57;
     color: white;
+    padding: 46px 450px;
     .corporate-title {
-
+        font-size: 26px;
+        font-weight: 600;
+        padding-bottom: 26px;
     }
     .corporate-content {
-        display: flex;
-        justify-content: center;
         .corporate-box {
+            text-align: center;
             .box-icon {
                 height: 96px;
             }
             .box-desc {
-                
+                margin-top: 25px;
             }
         }
     }
