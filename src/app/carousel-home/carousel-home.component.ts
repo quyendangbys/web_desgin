@@ -69,7 +69,7 @@ export class CarouselHomeComponent implements OnInit {
           itemPipe.innerHTML =
           Array.from(itemPipe?.innerText)
           .map((char, i) => {
-            return `<span style="transform:rotate(-${180 + 10 + i * 5}deg)">${char}</span>`
+            return `<span style="transform:rotate(${180 + 10 + i * 5}deg)">${char}</span>`
           }).join('');   
         }
 

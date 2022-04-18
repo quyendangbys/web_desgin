@@ -123,6 +123,7 @@
             transform-origin: 0px 200px;
             top: -100%;
             left: 100%;
+            transform: scale(1, -1);
         }
     }
 
@@ -158,4 +159,8 @@
             transform-origin: 0 200px;
         }
     }
+}
+
+.mirror {
+    transform: scale(1, -1);
 }
