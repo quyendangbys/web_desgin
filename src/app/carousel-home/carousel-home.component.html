@@ -1,0 +1,14 @@
+<div class="d-flex justify-content-center align-items-center" style="height: 100vh">
+    <div class="chart-pipe">
+        <ng-container *ngFor="let item of data; let i = index">
+            <div class="quarter-circle-item quarter-circle--{{i}}">
+                <div class="logo"></div>
+                <div class="text" [id]="'circle_' + i">
+                    <p>{{item?.name}}</p>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>
+
+
