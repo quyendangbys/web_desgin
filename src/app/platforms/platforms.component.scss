@@ -35,27 +35,27 @@
 // }
 
 .offering {
-    padding: 50px 235px 74px 235px;
-    background-color: #e3e9e4;
+    padding: 50px 218px 74px 218px;
+    // background-color: #e3e9e4;
     .offering-item {
         // width: 50%;
         padding: 40px;
-        height: 450px;
-        border-radius: 6px;
+        height: 500px;
+        border-radius: 14px;
         background-color: #f6f6f6;
     }
     .offering-title {
         font-weight: bold;
         font-size: 1.6rem;
         color: #428d57;
-        display: flex;
-        justify-content: center;
+        // display: flex;
+        // justify-content: center;
         padding-bottom: 32px;
     }
     .offering--sub-title {
         color: #428d57;
         font-size: 1.4rem;
-        padding-bottom: 20px;
+        // padding-bottom: 20px;
     }
     .offering-box {
         margin-bottom: 15px;
