@@ -1,6 +1,11 @@
 .header {
     height: 81px;
     padding: 17px 213px;
+    a {
+        color: black;
+        font-size: 14px;
+        font-weight: 700;
+    }
 }
 .body-bg {
     background-image: url("/assets/images/forest.jpg");
@@ -17,43 +22,40 @@
         font-family: sans-serif;
     }
     button {
-        background-color: #428d57;
+        background-color: #f4ba48;
         color: white;
         width: 155px;
         height: 42px;
         font-size: 14px;
+        border-radius: 3px;
     }
 }
 .body-book {
-    background-color: #f6f6f6;
+    // background-color: #f6f6f6;
     width: 100%;
-    height: 1000px;
-    padding: 0 235px;
-    .row {
-        padding-top: 100px;
-        padding-bottom: 80px;
-        .col {
-            padding-right: 176px;
-            margin-top: 150px;
-        }
-        .body-book_title {
+    // height: 1;
+    // padding: 0 235px;
+    .body-book-first {
+        height: 500px;
+        padding: 0 218px;
+        &_title {
             color: #428d57;
             font-size: 35px;
             font-weight: 600;
             font-family: sans-serif;
         }
-        .body-book_sub-title {
+        &_sub-title {
             color: black;
         }
     }
 }
 
 .body-card {
-    background-color: white;
+    background-color: #f6f6f6;
     width: 100%;
     height: 500px;
-    box-shadow: 0px 0px 9px 0px #0000002e;
-    padding: 50px 0px;
+    // box-shadow: 0px 0px 9px 0px #0000002e;
+    padding: 50px 218px;
     .carousel-caption {
          color: black;
     }
@@ -117,6 +119,10 @@
 }
 
 .carousel-indicators {
+    justify-content: start;
+    // padding: 0px 218px;
+    margin-right: 0;
+    margin-left: 0;
     .active {
         background-color: #428d57;
         width: 22px;
@@ -149,7 +155,7 @@
 
 .carousel-caption {
     position: unset;
-    padding: 0 384px;
+    // padding: 0 218px 0 218px;
     .carousel-caption_title {
         color: #428d57;
         font-size: 23px;
