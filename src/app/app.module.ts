@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PlatformsComponent } from './platforms/platforms.component';
 import { SolutionsComponent } from './solutions/solutions.component';
+import { CarouselHomeComponent } from './carousel-home/carousel-home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PlatformsComponent,
-    SolutionsComponent
+    SolutionsComponent,
+    CarouselHomeComponent
   ],
   imports: [
     BrowserModule,
