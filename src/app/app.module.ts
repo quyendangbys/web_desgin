@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { PlatformsComponent } from './platforms/platforms.component';
 import { SolutionsComponent } from './solutions/solutions.component';
 import { CarouselHomeComponent } from './carousel-home/carousel-home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CarouselHomeComponent } from './carousel-home/carousel-home.component';
   imports: [
     BrowserModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [
     {provide: LocationStrategy, useClass: PathLocationStrategy  },

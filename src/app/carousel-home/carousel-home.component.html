@@ -1,0 +1,98 @@
+<div class="d-flex justify-content-center align-items-center" style="background: #F6F6F6">
+    <div style="
+background: white; border-radius: 50%;     position: absolute;
+top: -100px;" >
+            <div class="chart-pipe" style="position: relative;">
+                <ng-container *ngFor="let item of data; let i = index">
+                    <div [ngSwitch]="i">
+                        <ng-container *ngSwitchCase="0">
+                            <div data-target="#carouselExampleIndicators" data-slide-to="0"
+                            [class.item-active]="isActiveIndex === i" class="quarter-circle-item quarter-circle--{{i}}" (click)="isActiveIndex = i">
+                                <div class="logo d-flex justify-content-center align-items-center" [ngSwitch]="i">
+                                    <i class="far fa-bullseye-arrow"></i>
+                                </div>
+                                <div class="text" [id]="'circle_' + i">
+                                    <p>{{item?.name}}</p>
+                                </div>
+                            </div>
+                        </ng-container>
+                        <ng-container *ngSwitchCase="1">
+                            <div data-target="#carouselExampleIndicators" data-slide-to="1"
+                            [class.item-active]="isActiveIndex === i" class="quarter-circle-item quarter-circle--{{i}}" (click)="isActiveIndex = i">
+                                <div class="logo d-flex justify-content-center align-items-center" [ngSwitch]="i">
+                                    <i class="fal fa-calendar-edit"></i>
+                                </div>
+                                <div class="text" [id]="'circle_' + i">
+                                    <p>{{item?.name}}</p>
+                                </div>
+                            </div>
+                        </ng-container>
+
+                        <ng-container *ngSwitchCase="2">
+                            <div data-target="#carouselExampleIndicators" data-slide-to="2"
+                            [class.item-active]="isActiveIndex === i" class="quarter-circle-item quarter-circle--{{i}}" (click)="isActiveIndex = i">
+                                <div class="logo d-flex justify-content-center align-items-center" [ngSwitch]="i">
+                                        <i class="fal fa-comments-alt"></i>
+                                </div>
+                                <div class="text" [id]="'circle_' + i">
+                                    <p>{{item?.name}}</p>
+                                </div>
+                            </div>
+                        </ng-container>
+
+                        <ng-container *ngSwitchCase="3">
+                            <div data-target="#carouselExampleIndicators" data-slide-to="3"
+                            [class.item-active]="isActiveIndex === i" class="quarter-circle-item quarter-circle--{{i}}" (click)="isActiveIndex = i">
+                                <div class="logo d-flex justify-content-center align-items-center" [ngSwitch]="i">
+                                    <i class="fal fa-chart-pie"></i>
+                                </div>
+                                <div class="text" [id]="'circle_' + i">
+                                    <p>{{item?.name}}</p>
+                                </div>
+                            </div>
+                        </ng-container>
+
+                    </div>
+                    <!-- data-target="#carouselExampleIndicators" data-slide-to="{{i}}" -->
+                    <!-- <div [class.item-active]="isActiveIndex === i" class="quarter-circle-item quarter-circle--{{i}}" (click)="isActiveIndex = i">
+                        <div class="logo d-flex justify-content-center align-items-center" [ngSwitch]="i">
+                            <ng-container *ngSwitchCase="0">
+                                <i class="far fa-bullseye-arrow"></i>
+                            </ng-container>
+
+                            <ng-container *ngSwitchCase="1">
+                                <i class="fal fa-calendar-edit"></i>
+                            </ng-container>
+                            
+                            <ng-container *ngSwitchCase="2">
+                                <i class="fal fa-comments-alt"></i>
+                            </ng-container>
+
+                            <ng-container *ngSwitchCase="3">
+                                <i class="fal fa-chart-pie"></i>
+                            </ng-container>
+
+                        </div>
+                        <div class="text" [id]="'circle_' + i">
+                            <p>{{item?.name}}</p>
+                        </div>
+                    </div> -->
+                </ng-container>
+
+                <div class="point-center">
+                    <div class="point-center-1">
+                        <div class="point-center-2 d-flex justify-content-center align-items-center">
+                            <div class="text">
+                                <div class="text-center">NET</div>
+                                <div class="text-center">ZERO</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
