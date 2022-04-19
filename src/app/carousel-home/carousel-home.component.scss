@@ -1,77 +1,120 @@
+$width-part-parent: 275px;
+$width-part-child: 225px;
+$margin-part-in: 10px;
+$margin-part-on: 25px;
+$width-point-center: 175px;
+$width-point-center-1: 150px;
+$width-point-center-2: 120px;
+$font-size-icon: 72px;
 .chart-pipe {
     display: flex;
     justify-self: center;
     align-items: center;
-    // min-height: 100vh;
     --spacing: 25px;
     --columns: 2;
     display: flex;
     flex-wrap: wrap;
-    width: 450px;
-    height: 450px;
-    margin-left: calc(-1 * var(--spacing));
+    width: 620px; // $width-part-parent * 2 + $margin-part-in * 2 + $margin-part-on * 2
+    height: 620px; // $width-part-parent * 2 + $margin-part-in * 2 + $margin-part-on * 2
     .quarter-circle-item {
         display: flex;
         flex-direction: column;
-        // border-radius: 20px;
         overflow: hidden;
-        // width: 50% !important;
-        width: calc(calc(100% / var(--columns)) - var(--spacing)) !important;
-        margin-left: var(--spacing);
-        margin-bottom: var(--spacing);
+        width: $width-part-parent;
+        cursor: pointer;
+        background-color: white;
+        //   animation: leaves 5s ease-in-out infinite alternate;
+        transition: transform .2s;
+    }
+
+
+    .quarter-circle-item:hover {
+        z-index: 1;
+        transform: scale(1.03); 
+        transform-origin: bottom right;
+        background-color: #E3E9E4;
+        // color: #344457;
     }
 
     .quarter-circle--0 {
         position: relative;
-        width: 200px;
-        height: 200px;
+        width: $width-part-parent;
+        height: $width-part-parent;
         border-top-left-radius: 100%;
-        background-color: #eeee;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        margin-left: $margin-part-on;
+        margin-top: $margin-part-on;
+        margin-right: $margin-part-in;
+        margin-bottom: $margin-part-in;
+
         .logo {
             position: absolute;
-            width: 170px;
-            height: 170px;
+            width: $width-part-child;
+            height: $width-part-child;
             border-top-left-radius: 100%;
-            background-color: red;
-            filter: brightness(1.5) contrast(1.5);
+            background-color: #9BBEA4;
+            // filter: brightness(1.5) contrast(1.5);
             right: 0;
             bottom: 0;
+
+            i {
+                font-size: $font-size-icon;
+                margin-top: 25px;
+                margin-left: 25px;
+                color: #344457;
+            }
         }
         .text {
             position: absolute;
             width: 100%;
             height: 100%;
-            
         }
         span {
             position: absolute;
             left: 100%;
             font-size: 1.2rem;
-            transform-origin: 0 200px;
+            transform-origin: 0 $width-part-parent;
+            // color: #344457;
+            font-weight: bold;
+            display: block;
+            padding-top: 12px;
+            color: #428D57
         }
     }
 
     .quarter-circle--1 {
         position: relative;
-        width: 200px;
-        height: 200px;
+        width: $width-part-parent;
+        height: $width-part-parent;
         border-top-right-radius: 100%;
-        background-color: #eeee;
         display: flex;
         justify-content: center;
         align-items: center;
+
+
+        margin-right: $margin-part-on;
+        margin-top: $margin-part-on;
+
+        margin-left: $margin-part-in;
+        margin-bottom: $margin-part-in;
         .logo {
             position: absolute;
-            width: 170px;
-            height: 170px;
+            width: $width-part-child;
+            height: $width-part-child;
             border-top-right-radius: 100%;
-            background-color: red;
-            filter: brightness(1.5) contrast(1.5);
+            background-color: #A0B1AB;
             left: 0;
             bottom: 0;
+
+            i {
+                font-size: $font-size-icon;
+                margin-top: 25px;
+                margin-right: 25px;
+                color: #344457;
+            }
         }
         .text {
             position: absolute;
@@ -80,37 +123,45 @@
         }
         span {
             position: absolute;
-            // left: 0;
-            // right: 100%;
             font-size: 1.2rem;
-            // transform-origin: 0 200px;
-            transform-origin: 0 200px;
-            // width: 10px;
-            // height: 10px;
-            // background-color: green;
-            // z-index: 10;
+            transform-origin: 0 $width-part-parent;
+            color: #344457;
+            font-weight: bold;
+            display: block;
+            padding-top: 12px;
         }
     }
 
 
     .quarter-circle--2 {
         position: relative;
-        width: 200px;
-        height: 200px;
+        width: $width-part-parent;
+        height: $width-part-parent;
         border-bottom-left-radius: 100%;
-        background-color: #eeee;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        margin-left: $margin-part-on;
+        margin-bottom: $margin-part-on;
+
+        margin-right: $margin-part-in;
+        margin-top: $margin-part-in;
         .logo {
             position: absolute;
-            width: 170px;
-            height: 170px;
+            width: $width-part-child;
+            height: $width-part-child;
             border-bottom-left-radius: 100%;
-            background-color: red;
-            filter: brightness(1.5) contrast(1.5);
+            background-color: #CED9D1;
             right: 0;
             top: 0;
+
+            i {
+                font-size: $font-size-icon;
+                margin-bottom: 25px;
+                margin-left: 25px;
+                color: #344457;
+            }
         }
         .text {
             position: absolute;
@@ -120,43 +171,109 @@
         span {
             position: absolute;
             font-size: 1.2rem;
-            transform-origin: 0px 200px;
+            transform-origin: 0px $width-part-parent;
             top: -100%;
             left: 100%;
             transform: scale(1, -1);
+            color: #344457;
+            font-weight: bold;
+            display: block;
+            padding-top: 12px;
         }
     }
 
     .quarter-circle--3 {
         position: relative;
-        width: 200px;
-        height: 200px;
+        width: $width-part-parent;
+        height: $width-part-parent;
         border-bottom-right-radius: 100%;
-        background-color: #eeee;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        margin-right: $margin-part-on;
+        margin-bottom: $margin-part-on;
+
+        margin-left: $margin-part-in;
+        margin-top: $margin-part-in;
         .logo {
             position: absolute;
-            width: 170px;
-            height: 170px;
+            width: $width-part-child;
+            height: $width-part-child;
             border-bottom-right-radius: 100%;
-            background-color: red;
-            filter: brightness(1.5) contrast(1.5);
+            background-color: #C4DCA9;
             left: 0;
             top: 0;
+
+            i {
+                font-size: $font-size-icon;
+                margin-bottom: 25px;
+                margin-right: 25px;
+                color: #344457;
+            }
         }
         .text {
             position: absolute;
             width: 100%;
             height: 100%;
-            
         }
         span {
             position: absolute;
             top: -100%;
             font-size: 1.2rem;
-            transform-origin: 0 200px;
+            transform-origin: 0 $width-part-parent;
+            color: #344457;
+            font-weight: bold;
+            display: block;
+            padding-top: 12px;
+        }
+    }
+
+    .item-active {
+        background-color: #E3E9E4;
+        transform: scale(1.03,1.03);
+        .text {
+            box-shadow: inset 0px 4px 10px #00000029;
+        }
+    }
+
+    .point-center {
+        position: absolute;
+        background-color: white;
+        width: $width-point-center;
+        height: $width-point-center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        z-index: 2;
+        .point-center-1 {
+            position: absolute;
+            background-color:  #EFF2F6;
+            width: $width-point-center-1;
+            height: $width-point-center-1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            box-shadow: inset 0px 4px 10px #00000029;
+            .point-center-2 {
+                position: absolute;
+                background-color:  white;
+                width: $width-point-center-2;
+                height: $width-point-center-2;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+                box-shadow: outset 0px 4px 10px #00000029;
+                .text {
+                    color: #428D57;
+                    font-weight: bold;
+                    font-size: 28px;
+                    line-height: 1.2;
+                }
+            }
         }
     }
 }

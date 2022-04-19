@@ -29,7 +29,7 @@ export class CarouselHomeComponent implements OnInit {
       icon: ''
     },
   ]
-
+  isActiveIndex = 0;
   constructor() { }
 
   ngOnInit(): void {
@@ -54,14 +54,14 @@ export class CarouselHomeComponent implements OnInit {
           itemPipe.innerHTML =
           Array.from(itemPipe?.innerText)
           .map((char, i) => {
-            return `<span style="transform:rotate(${270 + 10 + i * 5}deg)">${char}</span>`
+            return `<span style="transform:rotate(${270 + 20 + i * 2.7}deg)">${char}</span>`
           }).join('');   
         }
         if (index === 1) {
           itemPipe.innerHTML =
           Array.from(itemPipe?.innerText)
           .map((char, i) => {
-            return `<span style="transform:rotate(${10 + i * 5}deg)">${char}</span>`
+            return `<span style="transform:rotate(${27 + i * 2.7}deg)">${char}</span>`
           }).join('');   
         }
 
@@ -69,7 +69,7 @@ export class CarouselHomeComponent implements OnInit {
           itemPipe.innerHTML =
           Array.from(itemPipe?.innerText)
           .map((char, i) => {
-            return `<span style="transform:rotate(${180 + 10 + i * 5}deg)">${char}</span>`
+            return `<span style="transform:rotate(${180 + 20 + i * 3.3}deg)">${char}</span>`
           }).join('');   
         }
 
@@ -77,7 +77,7 @@ export class CarouselHomeComponent implements OnInit {
           itemPipe.innerHTML =
           Array.from(itemPipe?.innerText)
           .map((char, i) => {
-            return `<span style="transform:rotate(${90  + i * 5}deg)">${char}</span>`
+            return `<span style="transform:rotate(${90 + 20 + i * 3.3}deg)">${char}</span>`
           }).join('');   
         }
       })
