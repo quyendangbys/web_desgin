@@ -67,10 +67,12 @@
     }
     &_domain {
         margin-top: 10px;
+        height: 213px;
         &-left{
             background-color: #856299;
             color: white;
             padding: 20px 0px 33px 0px;
+            height: 100%;
             .dot-left {
                 height: 5px;
                 width: 5px;
@@ -192,5 +194,23 @@
                 color: #428d57;
             }
         }
+    }
+}
+
+.body-video {
+    padding: 80px;
+    background-color: #f8f8f8;
+    // height: 500px;
+    &_title {
+        text-align: center;
+        font-weight: 700;
+        padding-bottom: 34px;
+        line-height: 32.5px;
+    }
+    &_content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
     }
 }
