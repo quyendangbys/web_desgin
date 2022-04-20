@@ -1,0 +1,21 @@
+.header {
+    height: 81px;
+    padding: 17px 213px;
+    a {
+        color: black;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .logo {
+        position: relative;
+        animation: leftToRight 1.5s 1;
+        animation-direction: normal;
+        opacity: 1;
+        cursor: pointer;
+    }
+    
+    @keyframes leftToRight {
+        from {left: -200px;}
+        to {left: 0px;}
+    }
+}

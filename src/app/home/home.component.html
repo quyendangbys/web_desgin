@@ -1,15 +1,4 @@
-<div class="header">
-    <div class="d-flex justify-content-between align-items-center">
-        <img class="logo" src="/assets/images/logo_black.png" routerLink="#" alt="">
-        <div class="d-flex justify-content-between">
-            <a class="px-4" routerLink="/home" routerLinkActive="link-active">Home</a>
-            <a class="px-4" routerLink="/platforms" routerLinkActive="link-active">Platform</a>
-            <a class="px-4" routerLink="/solutions" routerLinkActive="link-active">Solutions</a>
-            <a class="px-4" routerLinkActive="link-active">Impacts</a>
-            <a class="px-4" routerLinkActive="link-active">Resources</a>
-        </div>
-    </div>
-</div>
+
 <div class="body-bg">
     <div class="d-flex flex-column justify-content-center align-items-center h-100">
         <div class="body-bg_title">Sustainability Impact Solutions </div>
@@ -82,20 +71,22 @@
     </div>
 </div>
 <div class="body-book">
-    <div class="row body-book-first" data-aos="fade-right">
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-            <img src="/assets/images/Home/Group 347.png" alt="" height="450px">
-        </div>
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-            <div class="d-flex flex-column align-items-start justify-content-center">
-                <div class="body-book-first_title">Data Driven</div>
-                <div class="body-book-first_title">Net Zero Impacts</div>
-                <div class="mt-4 body-book-first_sub-title">Atomiton offers data & analytics based-solutions to help
-                    companies drive their sustainability transformation using
-                    strategic, business and operational insights</div>
-                <div class="mt-4 body-book-first_sub-title">Whether your focus is target & report, plan & execute,
-                    measure & track, or communicate & engage, we have the tools
-                    and solutions to make your journey data-driven and insight-based</div>
+    <div class="body-book-first" data-aos="fade-right">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                <img src="/assets/images/Home/Group 347.png" alt="" height="450px">
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="d-flex flex-column align-items-start justify-content-center">
+                    <div class="body-book-first_title">Data Driven</div>
+                    <div class="body-book-first_title">Net Zero Impacts</div>
+                    <div class="mt-4 body-book-first_sub-title">Atomiton offers data & analytics based-solutions to help
+                        companies drive their sustainability transformation using
+                        strategic, business and operational insights</div>
+                    <div class="mt-4 body-book-first_sub-title">Whether your focus is target & report, plan & execute,
+                        measure & track, or communicate & engage, we have the tools
+                        and solutions to make your journey data-driven and insight-based</div>
+                </div>
             </div>
         </div>
     </div>
@@ -203,14 +194,6 @@
 </div>
 
 
-<!-- <img class="logo" src="assets/images/logo_black.png" alt="">
-
-<div *ngFor="let item of fakeMenu">
-        <div class="progress">
-            <div class="progress__fill"></div>
-        </div>
-</div> -->
-
 <div class="offering">
     <div class="offering-title">The Atomiton Offering</div>
     <div class="row">
@@ -291,26 +274,33 @@
 </div>
 
 <div class="corporate" data-aos="fade-up">
-    <div class="corporate-title d-flex justify-content-center align-items-center">Turn corporate emissions targets into
-    </div>
-
-    <div class="corporate-content d-flex justify-content-between align-items-center">
-        <div class="corporate-box">
-            <div class="box-icon">
-                <img src="assets/icons/stragtegies.png" alt="" />
+    <div class="container">
+        <div class="corporate-title d-flex justify-content-center align-items-center text-center">Turn corporate emissions targets into</div>
+        
+        <div class="row corporate-content">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                <div class="corporate-box">
+                    <div class="box-icon">
+                        <img src="assets/icons/stragtegies.png" alt="" />
+                    </div>
+                    <div class="box-desc">ACTIONABLE STRATEGIES <br>AND PLANS</div>
+                </div>
             </div>
-            <div class="box-desc">ACTIONABLE STRATEGIES <br>AND PLANS</div>
-        </div>
-        <div class="corporate-box">
-            <div class="box-icon"><img src="assets/icons/xxx.png" alt="" /></div>
-            <div class="box-desc">OPERATIONAL METRICS</div>
-        </div>
-        <div class="corporate-box">
-            <div class="box-icon">
-                <img src="assets/icons/measurable.png" alt="" />
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                <div class="corporate-box">
+                    <div class="box-icon"><img src="assets/icons/xxx.png" alt="" /></div>
+                    <div class="box-desc">OPERATIONAL METRICS</div>
+                </div>
             </div>
-            <div class="box-desc">
-                MEASURE AND REPORTABLE OUTCOMES <br>AT ALL PRODUCTION FACILITIES
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                <div class="corporate-box">
+                    <div class="box-icon">
+                        <img src="assets/icons/measurable.png" alt="" />
+                    </div>
+                    <div class="box-desc">
+                        MEASURE AND REPORTABLE OUTCOMES <br>AT ALL PRODUCTION FACILITIES
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -321,12 +311,12 @@
 <div class="contact">
     <div class="container">
         <div class="row contact-content">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 title">
-                <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+            <div class="col-xl-6 col-lg-6 col-md-4 col-sm-12 col-12 title">
+                <div class="h-100 d-flex flex-column justify-content-center align-items-center text-center">
                     Contact us for a question <br> or schedule a demo
                 </div>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-12">
                 <div class="d-flex flex-column justify-content-center align-items-center h-100 w-100">
                     <div class="contact-form">
                         <div class="row">
@@ -388,138 +378,4 @@
             </div>
         </div>
     </div>
-
 </div>
-
-<div class="footer">
-    <div class="footer-header container">
-        <div class="row">
-            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12 footer-header-item">
-                <img class="title" src="/assets/images/logo_black.png" alt="">
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12 footer-header-item">
-                <div class="title" routerLink="/platforms">Platform</div>
-                <div>Carbon Transparency</div>
-                <div>Energy Insight</div>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12 footer-header-item">
-                <div class="title">Solutions</div>
-                <div>Emission Data Automation</div>
-                <div>Carbon Impact Modeling</div>
-                <div>Carbon Intensity Diagnostic</div>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12 footer-header-item">
-                <div class="title">Impacts</div>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12 footer-header-item">
-                <div class="title">Resources</div>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12 footer-header-item">
-                <div class="title">Connect</div>
-                <div>+1 (408) 859-2796</div>
-                <div>info@atomiton.com</div>
-                <div class="d-flex flex-wrap">
-                    <i class="fab fa-facebook-square icon" ></i>
-                    <i class="fab fa-instagram icon" ></i>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" version="1.0" width="28px" 
-                        viewBox="0 0 256.000000 256.000000" preserveAspectRatio="xMidYMid meet">
-                        <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)" fill="#000000"
-                            stroke="none">
-                            <path
-                                d="M138 2540 c-46 -14 -85 -48 -107 -94 l-21 -43 2 -1134 3 -1134 23 -37 c13 -20 40 -47 60 -60 l37 -23 1145 0 1145 0 37 23 c20 13 47 40 60 60 l23 37 3 1134 2 1134 -21 44 c-13 27 -37 55 -62 71 l-41 27 -1130 2 c-622 1 -1143 -2 -1158 -7z m540 -362 c77 -37 131 -138 118 -221 -30 -183 -238 -259 -371 -136 -72 67 -93 163 -54 249 57 125 181 169 307 108z m1195 -563 c121 -32 199 -94 248 -198 51 -111 59 -196 59 -639 l0 -398 -192 2 -193 3 -5 385 c-5 405 -7 419 -53 468 -36 39 -72 52 -140 52 -93 0 -143 -29 -182 -105 l-30 -59 -3 -373 -3 -373 -192 2 -192 3 0 605 0 605 182 3 182 2 3 -81 3 -82 28 41 c37 53 118 108 193 132 73 23 207 26 287 5z m-1108 -625 l0 -605 -192 -3 -193 -2 0 610 0 610 193 -2 192 -3 0 -605z" />
-                        </g>
-                    </svg>
-                    <i class="fab fa-youtube icon" ></i>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-sub ">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">@2022 Atomiton, inc. All Rights reserved</div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div class="d-flex flex-wrap justify-content-end">
-                        <div class="footer-sub-item">Cookies</div>
-                        <div class="footer-sub-item">Privacy</div>
-                        <div class="footer-sub-item">License</div>
-                        <div class="footer-sub-item">Terms</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-
-        <!-- <div>
-            @2022 Atomiton, inc. All Rights reserved
-        </div>
-        <div class="d-flex flex-wrap">
-            <div class="footer-sub-item">Cookies</div>
-            <div class="footer-sub-item">Privacy</div>
-            <div class="footer-sub-item">License</div>
-            <div class="footer-sub-item">Terms</div>
-        </div> -->
-    </div>
-</div>
-
-
-
-
-
-
-
-<!-- <div class="footer">
-    <div>
-        Data Driven Net Zero Impact
-    
-        Atomiton offers data & analytics based-solutions to help companies drive their sustainability transformation using
-        strategic, business and operational insights.
-    
-        Whether your focus is target & report, plan & execute, measure & track, or communicate & engage, we have the tools
-        and solutions to make your journey data-driven and insight-based.
-    </div>
-    
-    <div>
-        Target & Report
-    
-        Atomiton offers data & analytics based-solution to help companies drive their sustainability transformation using
-        strategic, business and operational insights.
-    
-        Whether your focus is target & report, plan & execute, measure & track, or communicate & engage, we have the tools
-        and solutions to make your journey data-driven and insight-based.
-    
-        Find out how A-stack and Emission Data Automation can help.
-    </div>
-</div> -->
-
-
-
-<!-- <div class="col h-100">
-    <div class="row h-100">
-        <div class="col-6 p-1">
-            <div class="topic-1 h-100 d-flex flex-column justify-content-center align-items-center">
-            <img src="/assets/images/logo.png" alt="" width="100px" height="50px">
-            <p class="pt-3">Target & Report</p>
-            </div>
-        </div>
-        <div class="col-6 p-1">
-        <div class="topic-2 h-100 d-flex flex-column justify-content-center align-items-center">
-            <img src="/assets/images/logo.png" alt="" width="100px" height="50px">
-            <p class="pt-3">Plan & Execute</p>
-        </div>
-        </div>
-        <div class="col-6 p-1">
-        <div class="topic-3 h-100 d-flex flex-column justify-content-center align-items-center">
-            <img src="/assets/images/logo.png" alt="" width="100px" height="50px">
-            <p class="pt-3">Measure & Track</p>
-        </div>
-        </div>
-        <div class="col-6 p-1">
-        <div class="topic-4 h-100 d-flex flex-column justify-content-center align-items-center">
-            <img src="/assets/images/logo.png" alt="" width="100px" height="50px">
-            <p class="pt-3 mb-1">Communicate</p>
-            <p>& Engage</p>
-        </div>
-        </div>
-    </div>
-</div> -->

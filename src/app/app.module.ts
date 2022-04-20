@@ -10,6 +10,7 @@ import { PlatformsComponent } from './platforms/platforms.component';
 import { SolutionsComponent } from './solutions/solutions.component';
 import { CarouselHomeComponent } from './carousel-home/carousel-home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     RouterModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SharedModule
   ],
   providers: [
     {provide: LocationStrategy, useClass: PathLocationStrategy  },

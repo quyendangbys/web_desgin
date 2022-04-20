@@ -1,12 +1,4 @@
-.header {
-    height: 81px;
-    padding: 17px 213px;
-    a {
-        color: black;
-        font-size: 14px;
-        font-weight: 700;
-    }
-}
+
 .body-bg {
     background-image: url("/assets/images/Home/Group 408.jpg");
     color: white;
@@ -185,68 +177,6 @@
 
 
 
-.footer {
-    // margin-top: 500px;
-    .footer-header {
-        background-color: white;
-        padding: 30px 0px;
-        font-size: 15px;
-        .footer-header-item {
-            div {
-                margin-bottom: 20px;
-            }
-            .title {
-                height: 40px;
-                margin-bottom: 20px;
-                font-weight: bold;
-                cursor: pointer;
-                position: relative;
-            }
-            .title::after {
-                content: "";
-                width: 68px;
-                height: 1px;
-                background-color: #5A9B6C;
-                z-index: 1;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                transition: width 1s, height 0.5s;
-            }
-            .title:hover::after {
-                width: 110px;
-                height: 3px;
-            }
-
-            .icon {
-                font-size: 30px;
-                margin-right: 12px;
-                cursor: pointer;
-            }
-        }
-    }
-    .footer-sub {
-        padding: 30px 0px;
-        background-color: #344457;
-        color: #A9BAC7;
-        .footer-sub-item {
-            margin-right: 10px;
-        }
-    }
-}
-
-.logo {
-    position: relative;
-    animation: leftToRight 1.5s 1;
-    animation-direction: normal;
-    opacity: 1;
-    cursor: pointer;
-}
-  
-@keyframes leftToRight {
-    from {left: -200px;}
-    to {left: 0px;}
-}
 
 
 .highway-slider {
@@ -317,20 +247,22 @@
 .contact {
     background-image: url("/assets/images/Home/Group 510.jpg");
     // height: 500px;
+    background-repeat: no-repeat;
     .contact-content {
         padding-top: 50px;
-        padding-bottom: 50px;
     }
     .title {
         color: white;
         font-weight: bold;
         font-size: 30px;
+        padding-bottom: 50px;
     }
     .contact-form {
         background-color: white;
         padding: 50px 40px;
         box-shadow: 0px 3px 16px #0000001F;
         border-radius: 8px;
+        margin-bottom: 50px;
         .item {
             margin-bottom: 20px;
         }
@@ -376,6 +308,7 @@
             outline: none;
             font-size: 14px;
             color: black;
+            resize: none;
             // height: 36px;
         }
         button {
@@ -489,7 +422,7 @@
 
 
     color: white;
-    padding: 46px 450px;
+    padding: 46px 0px 0px 0px;
     .corporate-title {
         font-size: 26px;
         font-weight: 600;
@@ -497,6 +430,7 @@
     }
     .corporate-content {
         .corporate-box {
+            padding-bottom: 46px;
             text-align: center;
             .box-icon {
                 height: 96px;
